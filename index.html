@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <title>Train Schedule</title>
+  <head>
+    <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+  
+  
+  </head>
+  <body>
+      <div class="container">
+          <div class="jumbotron text-center">
+              <h1>Schedule That Train <br/><small class="current-time"></small></h1>      
+          </div>
+          </div>
+          <div class="container">           
+              <table class="table table-bordered">
+                <thead>
+                    <h2>Current Train Schedule</h2>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency(min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Trenton Express</td>
+                    <td>Trenton</td>
+                    <td>25</td>
+                    <td>05:35</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>Oregon Trail</td>
+                    <td>Salem, Oregon</td>
+                    <td>3600</td>
+                    <td>01:39</td>
+                    <td>1154</td>
+                  </tr>
+                  <tr>
+                    <td>Midnight Carriage</td>
+                    <td>Philadelphia </td>
+                    <td>15</td>
+                    <td>05:53</td>
+                    <td>10</td>
+                  </tr>
+                <tr>
+                    <td>Boston Bus</td>
+                    <td>Boston</td>
+                    <td>65</td>
+                    <td>05:50</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>California Caravan</td>
+                    <td>San Francisco</td>
+                    <td>6000</td>
+                    <td>01:25</td>
+                    <td>4740</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="container" id="form-section">
+            <form>
+              <h2>Add Train</h2>
+              <div class="form-group">
+                <label for="train-name">Train Name:</label>
+                <input type="text" class="form-control" id="trainName" value="">
+              </div>
+              <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" class="form-control" id="destination" value="">
+              </div>
+              <div class="form-group">
+                  <label for="first-train-time">First Train Time:</label>
+                  <input type="text" class="form-control" id="first-train-time" value="">
+                </div>
+                <div class="form-group">
+                  <label for="frequency">Frequency:</label>
+                  <input type="text" class="form-control" id="frequency" value="">
+                </div>
+              
+              <button type="submit" class="btn btn-default" id="submit">Submit</button>
+            </form>
+          </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  </body>
+</html>

@@ -1,1 +1,1 @@
-# trainTable
+This is an app that allows the user to input a train name, the frequency and get arrival time.
